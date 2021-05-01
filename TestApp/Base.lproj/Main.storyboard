@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TestApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="axR-Cc-FB0">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <items>
+                                    <navigationItem title="Home" id="Bfz-XN-uvU">
+                                        <barButtonItem key="leftBarButtonItem" title="Page 2" id="zzS-N2-Yt9">
+                                            <connections>
+                                                <segue destination="S0Q-dN-WFy" kind="show" id="oLq-hB-sJX"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="axR-Cc-FB0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="99m-U0-Jnf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="axR-Cc-FB0" secondAttribute="bottom" constant="720" id="L6s-As-B08"/>
+                            <constraint firstItem="axR-Cc-FB0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="44" id="Wjk-pf-PO4"/>
+                            <constraint firstItem="axR-Cc-FB0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="qVm-9f-3Zf"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="7dL-hB-EJo"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="35" y="70"/>
+        </scene>
+        <!--Page2 View Controller-->
+        <scene sceneID="I3K-dn-4tU">
+            <objects>
+                <viewController id="S0Q-dN-WFy" customClass="Page2ViewController" customModule="TestApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="U37-3O-K6h">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pkd-WY-cg5">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <items>
+                                    <navigationItem title="Page 2" id="p70-Z1-ryb">
+                                        <barButtonItem key="leftBarButtonItem" title="Home" id="jJ1-4M-QEa">
+                                            <connections>
+                                                <segue destination="BYZ-38-t0r" kind="show" id="9I1-09-dn9"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Zgp-I4-zNh"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Pkd-WY-cg5" firstAttribute="centerX" secondItem="U37-3O-K6h" secondAttribute="centerX" id="5kd-Dv-c52"/>
+                            <constraint firstItem="Zgp-I4-zNh" firstAttribute="bottom" secondItem="Pkd-WY-cg5" secondAttribute="bottom" constant="720" id="FAN-b1-bZ9"/>
+                            <constraint firstItem="Pkd-WY-cg5" firstAttribute="leading" secondItem="Zgp-I4-zNh" secondAttribute="leading" id="U5V-H1-TzA"/>
+                            <constraint firstItem="Pkd-WY-cg5" firstAttribute="top" secondItem="Zgp-I4-zNh" secondAttribute="top" constant="44" id="cA9-vi-Mgk"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="MmI-vU-BmL"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9i0-7W-jpU" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1151" y="70"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
